@@ -1,0 +1,56 @@
+<!--
+  @description       : Visualforce Page for Making cadindates resume
+  @author            : Souvik Sen
+  @group             : CK
+  @last modified on  : 07-31-2025
+  @last modified by  : Souvik Sen
+-->
+<apex:page standardController="Candiate__c" renderAs="pdf" showHeader="false" applyBodyTag="false">
+    <html>
+        <head>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 20px;
+                }
+                .header {
+                    text-align: center;
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #004080;
+                }
+                .section-title {
+                    font-size: 16px;
+                    font-weight: bold;
+                    margin-top: 20px;
+                    color: #0070d2;
+                }
+                .content {
+                    font-size: 14px;
+                    margin-left: 10px;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="header">Candidate Resume</div>
+            <div class="section-title">Personal Details</div>
+            <div class="content">
+                Name: {!Candiate__c.Name}<br/>
+                Email: {!Candiate__c.Email__c}<br/>
+                Phone: {!Candiate__c.Mobile__c}
+            </div>
+            <div class="section-title">Work Experience</div>
+            <div class="content">
+                {!Candiate__c.Work_Experience__c}
+            </div>
+            <div class="section-title">Education</div>
+            <div class="content">
+                {!Candiate__c.Education__c}
+            </div>
+            <div class="section-title">Skills And Certifications</div>
+            <div class="content">
+                {!Candiate__c.Skills_And_Certifications__c}
+            </div>
+        </body>
+    </html>
+</apex:page>
