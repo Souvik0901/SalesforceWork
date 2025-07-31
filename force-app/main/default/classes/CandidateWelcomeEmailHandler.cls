@@ -2,12 +2,16 @@
  * @description       : handler Class for creating an email when candidate record generate
  * @author            : Souvik Sen
  * @group             : Apex 
- * @last modified on  : 01-02-2025
+ * @last modified on  : 07-31-2025
  * @last modified by  : Souvik Sen
 **/
 public with sharing class CandidateWelcomeEmailHandler {
- 
-    
+  
+    /** 
+    * @description this method used to send welcome eamil to candidates.
+    * @author Souvik Sen | 07-31-2025 
+    * @param newCandidates 
+    **/
     public static void sendWelcomeEmail(List<Candiate__c> newCandidates) {
         List<Messaging.SingleEmailMessage> emails = new List<Messaging.SingleEmailMessage>();
         List<Contact> contactsToCreate = new List<Contact>();

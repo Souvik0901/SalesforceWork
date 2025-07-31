@@ -1,10 +1,11 @@
 /**
- * @description       : 
- * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
- * @group             : 
- * @last modified on  : 01-01-2025
- * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+ * @description       : Test class for CandidateWelcomeEmailHandler class
+ * @author            : Souvik Sen
+ * @group             : CK
+ * @last modified on  : 07-31-2025
+ * @last modified by  : Souvik Sen
 **/
+
 @isTest
 public class CandidateWelcomeEmailHandlerTest {
 
